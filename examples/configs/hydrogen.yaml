@@ -1,0 +1,28 @@
+# Hydrogen gas simulation configuration
+
+# System parameters
+natoms: 1000
+mass: 1.008e-3  # kg/mol (hydrogen)
+radius: 120e-12  # meters
+
+# Simulation box (meters)
+box:
+  - [0, 1.0e-8]  # x: 0 to 10 nm
+  - [0, 1.0e-8]  # y: 0 to 10 nm
+  - [0, 1.0e-8]  # z: 0 to 10 nm
+
+# Thermodynamic parameters
+temperature: 300  # Kelvin
+
+# Integration parameters
+dt: 1.0e-15  # seconds (1 femtosecond)
+relaxation_time: 1.0e-12  # seconds (1 picosecond)
+nsteps: 10000
+
+# Boundary conditions
+boundary_type: reflective  # or 'periodic'
+
+# Output parameters
+output_file: outputs/hydrogen_300K.dump
+dump_frequency: 100  # Write every 100 steps
+plot_temperature: true
