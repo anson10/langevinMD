@@ -15,7 +15,7 @@ A Python framework for molecular dynamics simulations using Langevin dynamics
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -23,7 +23,6 @@ A Python framework for molecular dynamics simulations using Langevin dynamics
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
-- [Configuration](#configuration)
 - [Visualization](#visualization)
 - [Project Structure](#project-structure)
 - [Examples](#examples)
@@ -52,7 +51,7 @@ This approach is particularly useful for:
 
 ---
 
- Features
+## Features
 
 ### Core Functionality
 - **Langevin Thermostat**: Maintains constant temperature through friction and random forces
@@ -250,7 +249,6 @@ python examples/hydrogen_gas.py --config hydrogen.yaml --nsteps 50000
 2. **Initial view** of the particle system:
 
 ![OVITO Initial View](images/ovito_initial_view.png)
-*Placeholder: Add screenshot of initial particle configuration in OVITO*
 
 #### Visualization Tips
 
@@ -260,15 +258,13 @@ python examples/hydrogen_gas.py --config hydrogen.yaml --nsteps 50000
 - Color by velocity magnitude or particle ID
 
 ![OVITO Particle Rendering](images/ovito_particles.png)
-*Placeholder: Add screenshot showing particle rendering options*
 
 **Time Evolution:**
 - Use the animation controls to see particle motion
 - Adjust playback speed for smoother visualization
 - Export animations as video or image sequences
 
-![OVITO Animation](images/ovito_animation.png)
-*Placeholder: Add screenshot or GIF of animated trajectory*
+![OVITO Animation](images/ovito.gif)
 
 **Statistical Analysis:**
 - Compute radial distribution function g(r)
@@ -276,7 +272,6 @@ python examples/hydrogen_gas.py --config hydrogen.yaml --nsteps 50000
 - Monitor temperature fluctuations
 
 ![OVITO Analysis](images/ovito_analysis.png)
-*Placeholder: Add screenshot of analysis tools in OVITO*
 
 ### Built-in Plotting
 
@@ -290,12 +285,11 @@ sim.plot_temperature(
 )
 ```
 
-![Temperature Evolution](images/temperature_plot.png)
-*Placeholder: Add temperature vs time plot*
+![Temperature Evolution](outputs/temperature.png)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 langevinMD/
@@ -335,7 +329,7 @@ langevinMD/
 
 ---
 
-## 💡 Examples
+## Examples
 
 ### Example 1: Hydrogen Gas at Room Temperature
 
@@ -401,12 +395,9 @@ results = sim.run(
 sim.plot_temperature(filename='thermalization.png')
 ```
 
-![Thermalization Process](images/thermalization.png)
-*Placeholder: Add plot showing temperature reaching equilibrium*
-
 ---
 
-## 🧪 Testing
+## Testing
 
 Run the test suite to verify installation:
 
@@ -426,15 +417,15 @@ pytest tests/ -v -s
 
 ### Test Coverage
 
-- ✅ **Force calculations**: Langevin force, fluctuation-dissipation theorem
-- ✅ **Integration**: Euler method, energy conservation
-- ✅ **Boundary conditions**: Reflective and periodic boundaries
-- ✅ **Temperature control**: Thermalization and equilibration
-- ✅ **I/O operations**: Config loading, trajectory writing
+- **Force calculations**: Langevin force, fluctuation-dissipation theorem
+- **Integration**: Euler method, energy conservation
+- **Boundary conditions**: Reflective and periodic boundaries
+- **Temperature control**: Thermalization and equilibration
+- **I/O operations**: Config loading, trajectory writing
 
 ---
 
-## 🎯 Roadmap
+## Roadmap
 
 ### Current Features (v1.0)
 - [x] Langevin thermostat implementation
@@ -455,7 +446,7 @@ pytest tests/ -v -s
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -467,17 +458,9 @@ Contributions are welcome! Here's how you can help:
 6. **Push**: `git push origin feature/amazing-feature`
 7. **Open a Pull Request**
 
-### Development Guidelines
-
-- Follow PEP 8 style guidelines
-- Add docstrings to all functions and classes
-- Write unit tests for new features
-- Update documentation as needed
-- Use type hints where appropriate
-
 ---
 
-## 📚 References
+## References
 
 ### Scientific Background
 
@@ -497,13 +480,13 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Anson Antony S**
 - GitHub: [@anson10](https://github.com/anson10)
@@ -511,18 +494,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
-
-- Thanks to the molecular dynamics community for theoretical foundations
-- OVITO developers for excellent visualization tools
-- NumPy and SciPy communities for numerical computing infrastructure
-
----
-
 <div align="center">
 
-**⭐ Star this repository if you find it helpful! ⭐**
-
-Made with ❤️ for the computational physics community
+**Star this repository if you find it helpful! ⭐**
 
 </div>
